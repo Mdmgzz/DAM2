@@ -40,10 +40,13 @@
             get { return $"El nombre completo es : {nombre} {apellidos}"; }
                 
         }
+        public string NombreCompleto
+        {
+            get { return $"El nombre completo es : {nombre} {apellidos}"; }
+
+        }
         #endregion
         #region funciones y metodos
-        
-
         #endregion
     }
 }
