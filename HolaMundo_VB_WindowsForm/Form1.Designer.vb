@@ -22,26 +22,38 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
         Button1 = New Button()
+        Button2 = New Button()
         SuspendLayout()
         ' 
         ' Button1
         ' 
-        Button1.ForeColor = Color.Moccasin
-        Button1.Image = CType(resources.GetObject("Button1.Image"), Image)
-        Button1.Location = New Point(-9, 12)
+        Button1.BackColor = Color.Lime
+        Button1.ForeColor = Color.Black
+        Button1.Location = New Point(617, 12)
         Button1.Name = "Button1"
-        Button1.Size = New Size(797, 405)
+        Button1.Size = New Size(171, 148)
         Button1.TabIndex = 0
-        Button1.Text = "SIuuuu"
-        Button1.UseVisualStyleBackColor = True
+        Button1.Text = "CLIC HERE!!"
+        Button1.UseVisualStyleBackColor = False
+        ' 
+        ' Button2
+        ' 
+        Button2.BackColor = Color.Yellow
+        Button2.Cursor = Cursors.Hand
+        Button2.Location = New Point(116, 91)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(290, 170)
+        Button2.TabIndex = 1
+        Button2.Text = "CLIC HERE!!"
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Button2)
         Controls.Add(Button1)
         Name = "Form1"
         Text = "Form1"
@@ -49,4 +61,5 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
